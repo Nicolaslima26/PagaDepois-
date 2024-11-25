@@ -1,5 +1,5 @@
 import express from "express";
-import { client_route } from "./cliente/cliente_cadastro.js";
+import { client_route } from "./cadastro_cliente/cliente_cadastro.js";
 
 const app = express();
 app.use(express.json())

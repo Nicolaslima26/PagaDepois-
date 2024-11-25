@@ -35,7 +35,9 @@ client_route.post('/cliente', (req, res) => {
                 {msg: `Cliente ${nome} cadastrado com sucesso !`}
             );
         });
+
     }
+
 });
 
 export{client_route};
