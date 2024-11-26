@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { conn } from "../data/dbconnection.js";
+import { conn } from "../../data/dbconnection.js";
 
 const client_route = Router()
 
