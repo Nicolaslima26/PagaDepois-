@@ -20,15 +20,9 @@ lista_produtos.get("/produtos/listagem", (req, res)=>{
                 return obj_prod;
             })
             res.json(nomes_product)
+            
         }
     });
 });
-
-lista_produtos.post("/produtos/listagem", (req, res) => {
-    // const {nome} = req.body
-    // if (nome == nomes_product) {
-    //     res.json("deu certo")
-    // }
-})
 
 export{lista_produtos};
