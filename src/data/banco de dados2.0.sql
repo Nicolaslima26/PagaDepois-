@@ -1,11 +1,14 @@
-use PagueDepois;
-
+create database pagueDepois;
+use pagueDepois;
 create table cliente(
-	cpf int primary key not null auto_increment,
+	cpf int(11) primary key not null,
     nome varchar(30) not null,
-    idade int(3),
-    telefone int(13)
+    data_nasc date not null, 
+    telefone varchar(12)
 );
+
+drop table divida;
+drop table cliente;
 
 create table divida(
 	id int primary key not null auto_increment,
@@ -26,8 +29,7 @@ create table produtos_loja(
 create table compras(
 	id int primary key not null auto_increment,
 	valorTotal float not null,
-    id_produtos int not null,
-    foreign key( id_produtos) references produtos_loja(id)
+    data_compra date not null
 );
 
-select * from divida;
+select * from cliente;

@@ -5,5 +5,5 @@ import { client_route } from "../../cadastro_cliente/cliente_cadastro.js";
 const divida_router = Router();
 
 divida_router.post("/divida", (req, res) => {
-
+    
 })
