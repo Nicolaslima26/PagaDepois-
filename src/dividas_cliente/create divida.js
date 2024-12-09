@@ -107,7 +107,7 @@ divida_router.put("/divida", (req, res) =>{
                     });
                 }
         
-                if (result2.length === 0) {
+                if (result8.length === 0) {
                     return res.json({
                         error: "Compra não encontrada."
                     });
