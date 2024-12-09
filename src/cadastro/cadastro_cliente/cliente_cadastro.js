@@ -19,7 +19,7 @@ client_route.post('/cliente', (req, res) => {
             erro: "digite um telefone valido !!"
         })
     } else{
-        conn.query(`insert into cliente(cpf, nome, idade, telefone) VALUES (${cpf}, "${nome}", "${data_nasc}", ${telefone})`, (err, result)=>{
+        conn.query(`insert into cliente(cpf, nome, data_nasc, telefone) VALUES ("${cpf}", "${nome}", "${data_nasc}", ${telefone})`, (err, result)=>{
             if (err){
                 return res.json(err.message)
             }
@@ -28,7 +28,6 @@ client_route.post('/cliente', (req, res) => {
             );
         });
     }
-
 });
 
 export{client_route};

@@ -7,9 +7,6 @@ create table cliente(
     telefone varchar(12)
 );
 
-drop table divida;
-drop table cliente;
-
 create table divida(
 	id int primary key not null auto_increment,
     valor float(10) not null,

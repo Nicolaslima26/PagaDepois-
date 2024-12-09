@@ -43,4 +43,7 @@ compras_router.post("/compras", (req, res) => {
     });
 });
 
+
+
+
 export { compras_router };
